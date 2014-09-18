@@ -1,0 +1,15 @@
+{
+    "name": "hasscms/workbench",
+    "authors": [
+        {
+            "name": "zhepama",
+            "email": "zhepama@gmail.com"
+        }
+    ],
+    "require": {
+
+    },
+   "autoload": {
+		"psr-4": { "hasscms\\workbench\\": "" }
+	}
+}
