@@ -17,7 +17,7 @@ class DefaultController extends \yii\console\Controller {
 	}
 	public function actionIndex($package,$plain= false)
 	{
-		$path = $this->creator->create( $this->buildPackage($package), \Yii::$app->params["workbenchPath"], $plain);
+		$path = $this->creator->create( $this->buildPackage($package), \Yii::$app->params["workBenchPath"], $plain);
 		echo 'Package workbench created!';
 		chdir($path);
 		passthru('composer install --dev');
@@ -37,7 +37,7 @@ class DefaultController extends \yii\console\Controller {
 
 	public function actionAutoload()
 	{
-		$dir = FileHelper::normalizePath(rtrim(\Yii::$app->params["workbenchPath"]), DIRECTORY_SEPARATOR);
+		$dir = FileHelper::normalizePath(rtrim(\Yii::$app->params["workBenchPath"]), DIRECTORY_SEPARATOR);
 
 		$composers = FileHelper::findFiles($dir,["only"=>["composer.json"],"filter"=>function($file) use($dir){
 			if(substr_count($file,DIRECTORY_SEPARATOR)-3 > substr_count($dir,DIRECTORY_SEPARATOR))

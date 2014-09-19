@@ -40,6 +40,6 @@ class Starter {
 		$app->controllerMap['workbench'] = 'hasscms\workbench\controllers\DefaultController';
 		$app->params["packageAuthor"] = $event->data["author"];
 		$app->params["packageEmail"]=$event->data["email"];
-		$app->params["workbenchPath"]=$event->data["workbenchPath"];
+		$app->params["workBenchPath"]=$event->data["workBenchPath"];
 	}
 }
