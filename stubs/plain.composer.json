@@ -1,6 +1,6 @@
 {
     "name": "{{lower_vendor}}/{{lower_name}}",
-    "description": "",
+    "description": "{{lower_name}}",
     "authors": [
         {
             "name": "{{author}}",
