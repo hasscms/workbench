@@ -1,6 +1,26 @@
 <?php
 
 namespace  hasscms\workbench\helps;
+
+/**
+ * HassCMS (http://www.hassium.org/)
+ *
+ * @link      http://github.com/hasscms for the canonical source repository
+ * @copyright Copyright (c) 2014-2099  Hassium  Software LLC.
+ * @license   http://www.hassium.org/license/new-bsd New BSD License
+ */
+
+namespace hasscms\workbench\helps;
+
+use \yii\helpers\FileHelper;
+
+/**
+ *
+ *
+ * @author zhepama <zhepama@gmail.com>
+ * @date 2014-9-20 下午10:57:40
+ * @since 1.0
+ */
 class Package {
 
 	/**
